@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ get_ctf_name() }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* latin */
+        @font-face {
+          font-family: 'Londrina Outline';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Londrina Outline Regular'), local('LondrinaOutline-Regular'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/C8c44dM8vmb14dfsZxhetg3pDH-STu07rACPHvM.woff2') }}) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Londrina Solid';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Londrina Solid Regular'), local('LondrinaSolid-Regular'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/flUhRq6sw40kQEJxWNgkLuudGfNeKBMet5Hg.woff2') }}) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Nunito Regular'), local('Nunito-Regular'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXV3I6Li01BKofIOuaBTMnFcQIG.woff2') }}) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Nunito Regular'), local('Nunito-Regular'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXV3I6Li01BKofIO-aBTMnFcQIG.woff2') }}) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 400;
+          src: local('Nunito Regular'), local('Nunito-Regular'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXV3I6Li01BKofINeaBTMnFcQ.woff2') }}) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        /* vietnamese */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Nunito Bold'), local('Nunito-Bold'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXW3I6Li01BKofAjsOUbuvIWzgPDEtj.woff2') }}) format('woff2');
+          unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+        }
+        /* latin-ext */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Nunito Bold'), local('Nunito-Bold'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXW3I6Li01BKofAjsOUb-vIWzgPDEtj.woff2') }}) format('woff2');
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        /* latin */
+        @font-face {
+          font-family: 'Nunito';
+          font-style: normal;
+          font-weight: 700;
+          src: local('Nunito Bold'), local('Nunito-Bold'), url({{ url_for('views.themes', theme=get_ctf_theme(), path='fonts/XRXW3I6Li01BKofAjsOUYevIWzgPDA.woff2') }}) format('woff2');
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('views.themes', theme=get_ctf_theme(), path='css/anime.css') }}">
+    <link rel="stylesheet" href="{{ url_for('views.themes', theme=get_ctf_theme(), path='css/index.css') }}">
+</head>
+<body>
+<canvas class="fireworks"></canvas>
+<main>
+    <div class="content content--layout">
+        <h2 class="word word--swing">AEOLUS</h2>
+        <a class="user-guide" href="{{ url_for('views.static_html', route='/home') }}">
+            <h1 class="glitch">start to play</h1>
+            <h1 class="glitch">start to play</h1>
+            <h1 class="glitch">start to play</h1>
+        </a>
+        <p class="credits">
+            v<span class="version">0.1</span> © <span class="date">2018</span> <a href="https://a30lu5.github.io/blogs/" target="_blank">a30lu5.github.io</a>
+        </p>
+    </div>
+</main>
+<script src="{{ url_for('views.themes', theme=get_ctf_theme(), path='js/charming.min.js') }}"></script>
+<script src="{{ url_for('views.themes', theme=get_ctf_theme(), path='js/anime.min.js') }}"></script>
+<script src="{{ url_for('views.themes', theme=get_ctf_theme(), path='js/fireworks.js') }}"></script>
+<script src="{{ url_for('views.themes', theme=get_ctf_theme(), path='js/index.js') }}"></script>
+</body>
+</html>

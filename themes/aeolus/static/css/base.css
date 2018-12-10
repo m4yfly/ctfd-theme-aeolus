@@ -1,0 +1,173 @@
+html, body {
+}
+
+h1, h2 {
+}
+
+a {
+    text-shadow: 0 0 5px rgba(249, 249, 249, 0.25) !important;
+}
+
+table > thead > tr > td {
+    /* Remove border line from thead of all tables */
+    /* It can overlap with other element styles */
+    border-top: none !important;
+}
+
+.navbar-brand > h1 {
+    font-size: 5vw;
+}
+
+.nav-item {
+    list-style-image: none;
+}
+
+#score-graph {
+    height: 450px;
+    display: block;
+    clear: both;
+}
+
+.fa-spin.spinner {
+    margin-top: 225px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.spinner-error {
+    padding-top: 20vh;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: #FFF;
+    border-radius: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-outlined.btn-theme {
+    background: none;
+    color: #545454;
+    border-color: #545454;
+    border: 3px solid;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn {
+    letter-spacing: 1px;
+    text-decoration: none;
+    -moz-user-select: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    padding: 8px 20px;
+}
+
+.btn-info {
+    background-color: #5B7290 !important;
+    border-color: #5B7290 !important;
+}
+
+.alert {
+    border-radius: 0 !important;
+    padding: 0.8em;
+}
+
+.btn-fa {
+    cursor: pointer;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.cursor-help {
+    cursor: help;
+}
+
+/* Handle color changes for inputs */
+.form-control {
+    color: lightgray;
+    border-color: #666;
+    background-color: #131313;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: #131313;
+    border-color: #b5e853;
+    box-shadow: none;
+}
+/* end */
+
+/* Set the modal background to the body background */
+.modal-content {
+    /*background: #151515 0 0 !important;*/
+    background: #202020 0 0 !important;
+}
+
+
+/* Color close button white so it is visible */
+.close {
+    color: white;
+}
+
+
+/* Handle coloring of tabs. Especially important for modals */
+.nav-link.active {
+    background-color: transparent !important;
+    color: #b5e853 !important;
+    border: 0 !important;
+}
+
+.nav-tabs > li > a {
+    background-color: transparent;
+    color: #555;
+    border: 0;
+}
+
+.nav-tabs > li > a:focus {
+    color: #b5e853;
+    cursor: default;
+    border: 0 !important;
+}
+
+.nav-tabs > li > a:hover {
+    border: 0 !important;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border: 0 !important;
+}
+
+.nav-tabs .nav-link {
+    border: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+/* end */
+
+.dotslash:before {
+    content: "./";
+}

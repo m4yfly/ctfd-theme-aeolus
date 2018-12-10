@@ -1,0 +1,255 @@
+.chal-desc {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
+.chal-desc img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-content {
+    border-radius: 0px;
+    max-width: 1000px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.btn-info {
+    background-color: #5B7290 !important;
+}
+
+.badge-info {
+    background-color: #5B7290 !important;
+}
+
+.challenge-button {
+    /* box-shadow: 3px 3px 3px grey; */
+    opacity: 1;
+}
+
+.solved-challenge {
+    color: lightgray;
+    opacity: 0.2;
+}
+
+.corner-button-check {
+    margin-top: -10px;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+}
+
+.key-submit .btn {
+    height: 51px;
+}
+
+#submission-input {
+    width: 100%;
+    border: 2px solid transparent;
+    position: relative;
+    display: block;
+    float: right;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0;
+    color: #b5e853;
+    font-weight: 400;
+    background-color: #131313;
+}
+
+#submission-input:focus {
+    border-color: #b5e853;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(141, 226, 85, 0.78);
+}
+
+.modal-body {
+    position: relative;
+    padding: 40px 40px 0 40px;
+}
+
+.main-container {
+    width: 60%;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding-bottom: 0;
+}
+
+#challenges-board {
+    flex-wrap: nowrap;
+}
+
+#challenges-pre {
+    background: #151515  0 0 !important;
+    border: 0;
+    margin-bottom: 10vh;
+    overflow: visible;
+}
+
+#challenge-modal-wrapper {
+    overflow-x: visible;
+    width: 65vw;
+    margin-right: 5%
+}
+
+#challenge-modal {
+    overflow-y: scroll;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 320px) {
+    .main-container {
+        width: 100%;
+    }
+
+    #challenges-pre {
+        position: absolute;
+    }
+
+    #challenge-modal {
+        overflow-y: scroll;
+        width: 100vw;
+    }
+
+    #challenge-modal .tab-content > .tab-pane:nth-child(2) { /* This rule limits the size of the solves tab in the challenge view */
+        max-height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .low-res-hide {
+        opacity: 0.4
+    }
+
+    .footer {
+        visibility: hidden;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+
+    #challenges-pre {
+        position: absolute;
+    }
+
+    #challenge-modal {
+        overflow-y: scroll;
+        margin-left: 25%;
+        width: 100vw;
+        max-width: 100% !important;
+    }
+
+    #challenge-modal .tab-content .tab-pane:nth-child(2) { /* This rule limits the size of the solves tab in the challenge view */
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .low-res-hide {
+        opacity: 0.4
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1150px) {
+    .main-container {
+        width: 80%;
+    }
+
+    #challenges-pre {
+        position: relative;
+    }
+
+    #challenge-modal {
+        overflow-y: scroll;
+        margin-left: 0;
+        width: 66.66666667%;
+    }
+
+    #challenge-modal .tab-content .tab-pane:nth-child(2) { /* This rule limits the size of the solves tab in the challenge view */
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .low-res-hide {
+        opacity: 1.0
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1250px) {
+    .main-container {
+        width: 70%;
+    }
+
+    #challenges-pre {
+        /*width: 50%;*/
+        position: relative;
+    }
+
+    #challenge-modal-wrapper {
+        overflow-x: visible;
+        width: 75vw;
+        position: relative;
+    }
+
+    #challenge-modal {
+        overflow-y: scroll;
+        width: 66.66666667%;
+    }
+
+    #challenge-modal .tab-content .tab-pane:nth-child(2) { /* This rule limits the size of the solves tab in the challenge view */
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .low-res-hide {
+        opacity: 1.0
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 1367px) {
+    .main-container {
+        width: 60%;
+    }
+
+    #challenges-pre {
+        /*width: 50%;*/
+        position: relative;
+    }
+
+    #challenge-modal-wrapper {
+        overflow-x: visible;
+        width: 65vw;
+        position: relative;
+    }
+
+    #challenge-modal {
+        overflow-y: scroll;
+        width: 66.66666667%;
+    }
+
+    #challenge-modal .tab-content .tab-pane:nth-child(2) { /* This rule limits the size of the solves tab in the challenge view */
+        max-height: 50vh;
+        overflow-y: scroll;
+    }
+
+    .low-res-hide {
+        opacity: 1.0
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        width: 600px;
+    }
+}
